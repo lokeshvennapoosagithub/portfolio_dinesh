@@ -1,0 +1,69 @@
+{% extends "education.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Portfolio</title>
+{% endblock title %}
+
+
+
+{% block content %}
+<style>
+      .container-fluid{
+            margin-top: 2.5cm;
+      }
+</style>
+<div class="container-fluid">
+      <div class="card text-center">
+            <div class="card-header">
+                  <h3>Experience</h3>
+            </div>
+            <div class="card-body">
+                  <h5 class="card-title">Research Assistant at Indiana University (IUPUI)</h5>
+                  <p class="card-text"> <h6>From August 2022 - Present </h6></p>
+                  
+                  <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                              Research Project
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Scientific papers abstract matching between SemEVAL and SciERC datasets and
+                              examining their annotation guidelines
+                              </a>
+                        <a href="#" class="list-group-item list-group-item-action">Relation Extraction between the entities using SciBERT on SciERC and SemEVAL
+                              datasets</a>
+                  </div>
+            </div>
+      </div>
+</div>
+
+
+<div class="container-fluid">
+      <div class="card text-center">
+            <div class="card-body">
+                  <h5 class="card-title">Software Engineer Intern at Ugaan Labs Pvt. Ltd, Bangalore, India</h5>
+                  <p class="card-text"> <h6>From February 2021 - August 2021 </h6></p>
+                  
+                  <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                              KYC API for Document Detection and Features Extraction(KYC Automation)
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Detecting the type of KYC document using yolov4 tiny model
+                              </a>
+                        <a href="#" class="list-group-item list-group-item-action">Converting darknet weight file to tflite and HDF5 file</a>
+                        <a href="#" class="list-group-item list-group-item-action">KYC document Features extraction:Includes image preprocessing, skew correction, text extraction using Pytesserac</a>
+                        
+                  </div>
+
+                  <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action active">Face age transformation and authenticating video KYC process(KYC Automation)</button>
+                        <button type="button" class="list-group-item list-group-item-action">Using Conditional Adversarial Autoencoder (CAAE) face age progression technique to authenticate video KYC process for a customer</button>
+                        <button type="button" class="list-group-item list-group-item-action">Features matching of two or more KYC documents of the same customer</button>
+                  </div>
+            </div>
+            <div class="card-footer text-muted">
+                  <a href="/achievements" class="btn btn-success">Go to Next</a>
+            </div>
+      </div>
+</div>
+
+{% endblock content %}

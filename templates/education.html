@@ -1,0 +1,50 @@
+{% extends "home.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Portfolio</title>
+{% endblock title %}
+
+
+
+{% block content %}
+
+<style>
+      .container-fluid{
+            margin-top: 2.5cm;
+      }
+</style>
+<div class="container-fluid">
+      <div class="card text-center">
+            <div class="card-header">
+                  <h3> Education </h3>
+                </div>
+            <div class="card-body">
+                  <h5 class="card-title">Masters in Indiana University - School of Informatics and Computing, Indianapolis, Indiana, USA</h5>
+                  <p class="card-text"><h6>Program : Applied Data Science ( From August 2022 - Present)</h6></p>
+                  <img class="card-img-top" src="media/masters.jpg" alt="Card image cap" style="width: 35rem;">
+                        <div class="card-body">
+                              <p class="card-text">Source:(https://www.facebook.com/InformaticsIUPUI/photos/a.357496474294071/546987158678334/?type=3&is_lookaside=1)</p>
+                        </div>
+                  </img>
+                  <a href="https://soic.iupui.edu/student-services/graduation/" class="btn btn-primary btn-sm" role="button" aria-pressed="true" target = "blank">Website</a>
+            </div>
+
+            <div class="card-body">
+                  <h5 class="card-title">Bachelor’s Degree from National Institute of Technology, Mizoram, India</h5>
+                  <p class="card-text"> <h6>Program : Mechanical Engineering ( From August 2016 - July 2020)</h6></p>
+                  <img class="card-img-top" src="media/btech.jpg" alt="Card image cap" style="width: 25rem;">
+                        <div class="card-body">
+                              <p class="card-text">Source:(https://nitmz.ac.in/)</p>
+                        </div>
+                  </img>
+                  <a href="https://nitmz.ac.in/" class="btn btn-primary btn-sm" role="button" aria-pressed="true" target = "blank">Website</a>
+            </div>
+
+
+            <div class="card-footer text-muted">
+                  <a href="/experience" class="btn btn-success">Go to Next</a>
+            </div>
+      </div>
+</div>
+{%endblock content%}

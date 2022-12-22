@@ -1,0 +1,45 @@
+{% extends "workexperience.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Portfolio</title>
+{% endblock title %}
+
+
+
+{% block content %}
+<style>
+      .container-fluid{
+            margin-top: 2.5cm;
+      }
+</style>
+<div class="container-fluid">
+      <div class="card text-center">
+            <div class="card-header">
+                  <h3>Achievements & Extra-curriculars</h3>
+            </div>
+            <div class="card-body">
+                  
+                  <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">Skew correction of KYC documents - July 2021</a>
+                        <a href="#" class="list-group-item list-group-item-action">Using pythonRLSA and openCV, corrected skewness of KYC documents. Got appreciation from the Team </a>
+                  </div>
+
+                  <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">Five star gold python badge level in hackerrank.com - 29th May 2020</a>
+                        <a href="#" class="list-group-item list-group-item-action">Achieved FIVE STAR-GOLD PYTHON BADGE LEVEL in hackerrank.com
+                        </a>
+                  </div>
+
+                  <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">Shaurya, Annual Sports Fest, NIT Mizoram, India - (8th - 12th November 2018)</a>
+                        <a href="#" class="list-group-item list-group-item-action">Captain and Winner in KHO-KHO Tournament
+                        </a>
+                  </div>
+            </div>
+            <div class="card-footer text-muted">
+                  <a href="/contact" class="btn btn-success">Go to Next</a>
+            </div>
+      </div>
+</div>
+{% endblock content %}

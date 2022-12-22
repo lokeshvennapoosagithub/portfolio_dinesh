@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Portfolio</title>
+{% endblock title %}
+
+{% block content %}
+<style>
+      .container-fluid{
+            margin-top: 2.5cm;
+      }
+</style>
+
+<div class="container-fluid">
+      <div class="card text-center">
+            <div class="card-header">
+              <h2> Hai, I am Dinesh Vennapoosa </h2>
+            </div>
+            <div class="card-body">
+                  <h5 class="card-title">I am a Data Science Engineer</h5>
+                  <img class="card-img-top" src="media/photo.png" alt="Card image cap" style="width: 19rem;">
+                        <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. alkdja dlfkal alkdfjal la alj flaldfjlkasjdlfaldfjlakjdlfjalkdjflkasjdflkajlkd aldjlkjfaa ald fa al flalkjfaljf</p>
+                              <p class="card-text">Write something about here about your goal or objective of your scope</p>
+                              <p class="card-text">Write something about here about your goal or objective of your scope</p>
+                        </div>
+                  </img>
+            </div>
+            
+            <div class="card-body">
+                  <img src="media/home.png" class="zoomIn wow animated" alt="" />
+            </div>
+            <div class="card-footer text-muted">
+                  <a href="/education" class="btn btn-success">Go to Next</a>
+            </div>
+            
+      </div>
+</div>
+
+{% endblock content %}
+
