@@ -26,8 +26,11 @@ def achievements(request):
       }
       return render(request, 'achievements.html', context)
 
+from .forms import ContactForm
 def contact(request):
+      form = ContactForm()
       context = {
-            'navbar': 'home'
+            'navbar': 'home',
+            'form'  :   form
       }
       return render(request, 'contact.html', context)
