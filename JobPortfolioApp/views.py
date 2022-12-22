@@ -3,16 +3,31 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def home(request):
-      return render(request, 'home.html')
+      context = {
+            'navbar': 'home'
+      }
+      return render(request, 'home.html', context)
 
 def education(request):
-      return render(request, 'education.html')
+      context = {
+            'navbar': 'education'
+      }
+      return render(request, 'education.html', context)
 
 def work_experience(request):
-      return render(request, 'workexperience.html')
+      context = {
+            'navbar': 'experience'
+      }
+      return render(request, 'workexperience.html', context)
 
 def achievements(request):
-      return render(request, 'achievements.html')
+      context = {
+            'navbar': 'achievements'
+      }
+      return render(request, 'achievements.html', context)
 
 def contact(request):
-      return render(request, 'contact.html')
+      context = {
+            'navbar': 'home'
+      }
+      return render(request, 'contact.html', context)

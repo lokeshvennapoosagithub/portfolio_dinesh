@@ -21,34 +21,33 @@
   <body>
 
 {%block nav%}
-<nav class="navbar justify-content-center navbar-light bg-light">
-      <a class="navbar-brand" href="#">Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="nav justify-content-center" id="navbarSupportedContent">
-            <li class="nav-item active">
-                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-              </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/education">Education <span class="sr-only">(current)</span></a>
-            </li>
-        
-            <li class="nav justify-content-center">
-                <a class="nav-link" href="/experience">Work Experience <span class="sr-only">(current)</span></a>
-            </li>
-            
-            <li class="nav justify-content-center">
-                <a class="nav-link" href="/achievements">Achievements and Extracurricular Activities <span class="sr-only">(current)</span></a>
-            </li>
-            
-            <li class="nav justify-content-center">
-                <a class="nav-link" href="/contact">Contact Forum <span class="sr-only">(current)</span></a>
-            </li>
-      </div> 
-  </nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link {%if navbar == 'home'%}active{%endif%}" href="{% url 'JobPortfolioApp:home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {%if navbar == 'education'%}active{%endif%}"  href="{% url 'JobPortfolioApp:education' %}">Education </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {%if navbar == 'experience'%}active{%endif%}" href="{% url 'JobPortfolioApp:experience' %}">Work Experience </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {%if navbar == 'achievements'%}active{%endif%}" href="{% url 'JobPortfolioApp:achievements' %}">Achievements </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {%if navbar == 'contact'%}active{%endif%}" href="{% url 'JobPortfolioApp:contact' %}">Contact </a>
+      </li>
+    </ul>
+  </div>
+</nav>
     {%endblock nav%}
 
 
